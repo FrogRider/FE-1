@@ -25,7 +25,7 @@ require('http').createServer(function(req, res) {
         </script>
       </body>
       </html>
-      `)
+      `);
   } else if(req.url === '/hello-world') {
     res.end('Hello World!');
   } else{
