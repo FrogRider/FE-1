@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import "normalize.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: ivory;
+  font-family: Raleway, sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+p a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  justify-content: center;
+  width: 100%;
+}
+
+.block > div:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.block__wrapper {
+  height:70%;
+}
+
+.block__elem {
+  align-self: center;
+  padding: 20px 0;
+  text-align: center;
+  width: 70%;
+}
+
+.block__elem img {
+  width:50%;
+}
+
+.block-img {
+  height:50vh;
+  overflow: hidden;
+  width: 100%;
+}
+
+.block-img img {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-right: 2px solid black;
+  width: 20%;
+}
+
+.menu > li:last-child {
+  border-right: none;
+}
+
+.menu a {
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  font-weight: 600;
+}
