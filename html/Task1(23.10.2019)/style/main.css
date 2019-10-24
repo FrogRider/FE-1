@@ -15,21 +15,6 @@ h1 {
   margin: 0;
 }
 
-p {
-  font-size: 1.2em;
-  margin: 0;
-}
-
-p a {
-  color: inherit;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-p a:hover {
-  text-decoration: underline;
-}
-
 .block {
   display: flex;
   flex-direction: column;
@@ -57,6 +42,21 @@ p a:hover {
 
 .block__elem img {
   width:50%;
+}
+
+.block__elem > div {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.block__elem > div a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.block__elem > div a:hover {
+  text-decoration: underline;
 }
 
 .block-img {
