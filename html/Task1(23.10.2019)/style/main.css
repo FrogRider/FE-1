@@ -29,10 +29,6 @@ h1 {
   justify-content: center;
 }
 
-.block__wrapper {
-  height:70%;
-}
-
 .block__elem {
   align-self: center;
   padding: 20px 0;
