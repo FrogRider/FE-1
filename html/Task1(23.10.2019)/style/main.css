@@ -18,8 +18,8 @@ h1 {
 .block {
   display: flex;
   flex-direction: column;
-  height: 550px;
   justify-content: center;
+  padding: 50px 0;
   width: 100%;
 }
 
@@ -37,7 +37,7 @@ h1 {
 }
 
 .block__elem img {
-  width:50%;
+  width:30%;
 }
 
 .block__elem > div {
@@ -56,8 +56,6 @@ h1 {
 }
 
 .block-img {
-  height:50vh;
-  overflow: hidden;
   width: 100%;
 }
 
