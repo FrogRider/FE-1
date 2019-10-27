@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import "normalize.css";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: ivory;
+  font-family: Raleway, sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 0;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.block > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.block h2 {
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+
+.block dl {
+  text-align: left;
+}
+
+.block dd span {
+  font-weight: bold;
+}
+
+.block-img {
+  width: 100%;
+}
+
+.block-img img {
+  width: 100%;
+}
+
+.block__elem {
+  align-self: center;
+  padding: 20px 0;
+  text-align: center;
+  width: 70%;
+}
+
+.block__elem--table {
+  width:40%;
+}
+
+.block__elem--lists {
+  display: flex;
+  width:auto;
+}
+
+.block__elem img {
+  width:30%;
+}
+
+.block__elem > div {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.block__elem > div a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.block__elem > div a:hover {
+  text-decoration: underline;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-right: 2px solid black;
+  width: 33%;
+}
+
+.menu > li:last-child {
+  border-right: none;
+}
+
+.menu a {
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  font-weight: 600;
+}
+
+.gemstone-table {
+  border-collapse: collapse;
+  width:100%;
+}
+
+.gemstone-table td,
+.gemstone-table th  {
+  border: 1px solid black;
+  font-size: 1.2em;
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.gemstone-table tr > td:first-child {
+  font-weight: bold
+}
+
+.gemstone-table caption {
+  padding:15px;
+}
+
+.planets-list {
+  font-size: 1.2em;
+}
+
+.planets-list li {
+  text-align: left;
+}
+
+.list-no-bullets {
+  list-style-type: none;
+}
+
+.list-zeros {
+  list-style-type: decimal-leading-zero;
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Website</title>
+  <link rel="stylesheet" href="style/main.css">
+  <script src="script/main.js"></script>
+</head>
+<body>
+  <main>
+    <section class="block" id="top-element">
+      <div class="block__wrapper">
+        <div class="block__elem">
+          <h1>I'm Still Just a Sample Webpage</h1>
+        </div>
+        <div class="block__elem">
+          <div>
+            <strong>I'm almost the same as in Task 1.
+            But now I have lists and tables!</strong>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Sint doloremque explicabo quaerat, commodi, quis, rem possimus
+            deleniti quo omnis excepturi vel maiores facilis numquam vitae
+            modi? Quasi molestias alias iste. Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Repellat esse hic ducimus molestiae
+            placeat doloremque maiores ut, maxime ex, dolores ad reprehenderit
+            facere aliquam necessitatibus asperiores quos recusandae,
+            nesciunt adipisci!
+          </div>
+        </div>
+        <nav class="block__elem">
+          <ul class="menu">
+            <li>
+              <a href="#gemstones">
+                Gemstones Table
+              </a>
+            </li>
+            <li>
+              <a href="#planets">
+                Planets and Their Moons
+              </a>
+            </li>
+            <li>
+              <a href="#lists">
+                Ordered and Unordered Lists
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section class="block-img">
+      <img src="img/workspace.jpg" alt="Workspace" title="Workspace Image">
+    </section>
+    <section class="block" id="gemstones">
+      <div class="block__wrapper">
+        <div class="block__elem block__elem--table">
+          <table class="gemstone-table">
+            <caption><h2>Gemstones Table (Task 2.1)</h2></caption>
+            <thead>
+              <tr>
+                <th></th>
+                <th>2010</th>
+                <th>2012</th>
+                <th>2014</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Sapphires</td>
+                <td rowspan="2">1483</td>
+                <td>4532</td>
+                <td>6743</td>
+              </tr>
+              <tr>
+                <td>Rubies</td>
+                <td>3385</td>
+                <td>7482</td>
+              </tr>
+              <tr>
+                <td>Diamonds</td>
+                <td>683</td>
+                <td colspan="2">238</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="planets">
+      <header>
+        <h2>Planets and Their Moons (Task 2.2)</h2>
+      </header>
+      <div class="block__wrapper">
+        <div class="block__elem block__elem--lists">
+          <ul class="planets-list">
+            <li>
+              Earth
+              <ol>
+                <li>Moon</li>
+              </ol>
+            </li>
+            <li>
+              Mars
+              <ol>
+                <li>Phobos</li>
+                <li>Deimos</li>
+              </ol>
+            </li>
+            <li>
+              Uranus
+              <ol>
+                <li>Ariel</li>
+                <li>Umbriel</li>
+                <li>Titania</li>
+                <li>Oberon</li>
+                <li>Miranda</li>
+              </ol>
+            </li>
+            <li>
+              Neptune
+              <ol>
+                <li>Triton</li>
+                <li>Nereid</li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="lists">
+      <header>
+        <h2>Ordered and Unordered Lists (Task 2.3)</h2>
+      </header>
+      <div class="block__wrapper">
+        <div class="block__elem block__elem--lists">
+          <div class="unordered">
+            <dl>
+              <dt>
+                <dd>
+                  <span>Disc</span>
+                  <ul type="disc">
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                  </ul>
+                </dd>
+              </dt>
+              <dt>
+                <dd>
+                  <span>Square</span>
+                  <ul type="square">
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                  </ul>
+                </dd>
+              </dt>
+              <dt>
+                <dd>
+                  <span>Circle</span>
+                  <ul type="circle">
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                  </ul>
+                </dd>
+              </dt>
+              <dt>
+                <dd>
+                  <span>None - no bullets</span>
+                  <ul class="list-no-bullets">
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                  </ul>
+                </dd>
+              </dt>
+            </dl>
+          </div>
+          <div class="ordered">
+            <dl>
+              <dt>
+                <dd>
+                  <span>Decimal</span>
+                  <ol>
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                  </ol>
+                </dd>
+              </dt>
+              <dt>
+                <dd>
+                  <span>Decimal with leading zeros</span>
+                  <ol class="list-zeros">
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                  </ol>
+                </dd>
+              </dt>
+              <dt>
+                <dd>
+                  <span>Lowercase ASCII letters</span>
+                  <ol type="a">
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                  </ol>
+                </dd>
+              </dt>
+              <dt>
+                <dd>
+                  <span>Lowercase Roman numerals</span>
+                  <ol type="i">
+                    <li>First Item</li>
+                    <li>Second Item</li>
+                    <li>Third Item</li>
+                  </ol>
+                </dd>
+              </dt>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
