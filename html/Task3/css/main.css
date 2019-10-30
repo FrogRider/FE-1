@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import "normalize.css";
+
+@font-face {
+  font-family: 'csnpwdt';
+  src: url(../font/csnpwdt.otf);
+  src: url(../font/csnpwdt.ttf);
+}
+
+/*
+orange - #ff6200
+*/
+
+html {
+  font-family: 'Raleway', 'Open Sans', sans-serif;
+  min-height: 100%;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #602749;
+}
+
+header,
+footer {
+  background-color: #000;
+  box-sizing: border-box;
+  min-height:60px;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  padding: 0 20px;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.header__name {
+  align-items: center;
+  color: #ff6200;
+  display: flex;
+  font-family: 'csnpwdt', 'Open Sans', sans-serif;
+  font-size: 40px;
+}
+
+.header__menu {
+  padding: 0 20px;
+}
+
+.header__menu ul {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu li {
+  align-items: center;
+  color: #ff6200;
+  cursor: pointer;
+  display: flex;
+  font-size: 22px;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.header__menu li:hover {
+  background-color: #ff6200;
+}
+
+.header__menu li a {
+  color: #ff6200;
+  text-decoration: none;
+}
+
+.header__menu li:hover a {
+  color: #000;
+}
