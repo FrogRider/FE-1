@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import "normalize.css";
+@import "slider.css";
 
 @font-face {
   font-family: 'csnpwdt';

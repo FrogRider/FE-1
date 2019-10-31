@@ -1,0 +1,23 @@
+.slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider__item {
+  align-items: flex-end;
+  display: flex;
+  height:600px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.slider__item--new {
+  left: -1920px;
+}
+
+.slider__item img {
+  width:100%;
+}
