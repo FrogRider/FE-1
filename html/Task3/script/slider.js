@@ -14,7 +14,10 @@ $(document).ready(function() {
   function initSlider() {
     // add new slider element
     $('.slider').append(`
-      <div class="slider__item slider__item--new"><img src="img/pumpkin-${slideIndex}.jpg" alt=""></div>
+      <figure class="slider__item slider__item--new">
+        <img src="img/pumpkin-${slideIndex}.jpg" alt="Slider Image ${slideIndex}">
+        <figcaption>Slider Image ${slideIndex}</figcaption>
+      </figure>
     `);
 
     // animate new slide so it enters the page from the left

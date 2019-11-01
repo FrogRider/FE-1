@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 @import "normalize.css";
 @import "slider.css";
 
@@ -6,6 +5,11 @@
   font-family: 'csnpwdt';
   src: url(../font/csnpwdt.otf);
   src: url(../font/csnpwdt.ttf);
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url(../font/Raleway-Regular.ttf);
 }
 
 /*
@@ -20,8 +24,21 @@ html {
   scroll-behavior: smooth;
 }
 
+audio {
+  outline: 0;
+}
+
 body {
-  background-color: #602749;
+  background-color: #292929;
+}
+
+button:focus {
+  outline:0;
+}
+
+h1 {
+  color: #ff6200;
+  text-align: left;
 }
 
 header,
@@ -37,14 +54,57 @@ header {
   padding: 0 20px;
 }
 
+figcaption {
+  display: none;
+}
+
 footer {
+  align-items: center;
   bottom: 0;
+  color: #ff6200;
+  display: flex;
+  justify-content: flex-start;
   left: 0;
+  padding-left: 20px;
   position: absolute;
 }
 
 main {
+  color: rosybrown;
   padding-bottom: 60px;
+}
+
+mark {
+  background-color: #ff6200;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid rosybrown;
+  color: black;
+  padding:10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  background-color: #ff6200;
+}
+
+tr:nth-child(odd) {
+  background-color: #ff9c5e;
+}
+
+tr:nth-child(even) {
+  background-color: #ffbd94;
+}
+
+video {
+  outline: 0;
 }
 
 .block {
@@ -54,6 +114,11 @@ main {
   line-height: 1.5;
   padding: 0 20px;
   text-align: justify;
+}
+
+.block__main {
+  padding-right: 40px;
+  width: 70%;
 }
 
 .block__side {
@@ -75,13 +140,141 @@ main {
   position: relative;
 }
 
+.block__videos,
+.block__audios {
+  display: flex;
+}
+
+.block__audios div {
+  width: 50%;
+}
+
+.block__audios div:first-child {
+  margin-right: 20px;
+}
+
+.block__audios audio {
+  width: 100%;
+}
+
+.block__videos-video {
+  margin-right: 20px;
+  width: 50%;
+}
+
+.block__videos-embed {
+  width: 50%;
+}
+
+.block__videos-embed embed {
+  height: 100%;
+  width: 100%;
+}
+
+.block__videos-video video {
+  height: 100%;
+  margin-right: 20px;
+  width: 100%;
+}
+
 .fact-text::before {
   content: "..."
 }
 
-.block__article {
-  padding-right: 40px;
-  width: 70%;
+.feedback {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback p {
+  margin-top: 0;
+}
+
+.feedback__category,
+.feedback__category div:nth-child(2) {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback__category {
+  margin-bottom: 20px;
+}
+
+.feedback__category-item {
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color:white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  height: 72px;
+  padding: 20px;
+  text-align: center;
+  width: 25%;
+}
+
+.feedback__category-item--active {
+  background-color: #ff6200;
+  border-color: black;
+  color: black;
+}
+
+.feedback__button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.feedback__button-wrapper button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  width: 25%;
+  padding: 10px 0;
+}
+
+.feedback__button-wrapper button:hover {
+  background-color: #ffcaa8;
+  border-color: black;
+  color: black;
+}
+
+.feedback__button-wrapper button:active {
+  background-color: #ff6200;
+}
+
+.feedback__error {
+  color: red;
+  text-decoration: underline;
+}
+
+.feedback__onhover:hover {
+  background-color: #ffcaa8;
+  border-color: black;
+  color: black;
+}
+
+.feedback__smiles {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.feedback__text {
+  box-sizing: border-box;
+  height: 200px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
 }
 
 .header__name {
@@ -122,8 +315,13 @@ main {
 
 .header__menu li a,
 .header__mobile-dropdown li a {
+  align-items: center;
   color: #ff6200;
+  display: flex;
+  justify-content: center;
+  height: 100%;
   text-decoration: none;
+  width: 100%;
 }
 
 .header__menu li:hover a,
@@ -162,10 +360,26 @@ main {
   color: #ff6200;
   cursor: pointer;
   font-size: 22px;
-  height: 100%;
-  padding: 20px 0;
+  height: 65px;
   text-align: center;
   width: 100%;
+}
+
+.smiley {
+  color: white;
+  cursor: pointer;
+  font-size: 4em;
+  padding: 0 10px;
+}
+
+.smiley:hover {
+  color: #ffcaa8;
+}
+
+.smiley--active {
+  /* I will try and think of something instead of important */
+  color: #ff6200 !important;
+  /* I promise! */
 }
 
 @media only screen and (max-width: 880px) {
@@ -177,9 +391,20 @@ main {
     width: 100%
   }
 
-  .block__article {
+  .block__main {
     width: 100%;
     padding-right: 0;
+  }
+
+  .block__videos,
+  .block__audios {
+    flex-direction: column;
+  }
+
+  .block__videos-video,
+  .block__videos-embed,
+  .block__audios div {
+    width: 100%;
   }
 
   .header__menu {

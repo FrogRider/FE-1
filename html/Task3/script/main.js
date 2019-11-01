@@ -3,6 +3,92 @@ $('.header__mobile-menu').click(function() {
   $('.header__mobile-dropdown').toggle('fast');
 });
 
+$('.header__mobile-dropdown a').click(function() {
+  $('.header__mobile-dropdown').css('display', 'none');
+});
+
+$('.smiley').click(function() {
+  $('.smiley').each(function() {
+    $(this).removeClass('smiley--active');
+  });
+  $(this).addClass('smiley--active');
+  $('.feedback__opinion-text').removeClass('feedback__error');
+});
+
+$('.feedback__category-item').click(function() {
+  $('.feedback__category-item').each(function() {
+    $(this).addClass('feedback__onhover');
+    $(this).removeClass('feedback__category-item--active');
+  });
+  $(this).removeClass('feedback__onhover');
+  $(this).addClass('feedback__category-item--active');
+  $('.feedback__category-text').removeClass('feedback__error');
+});
+
+$('.feedback__text').change(function() {
+  if($(this).val() != '') {
+    $('.feedback__text-par').removeClass('feedback__error');
+  }
+});
+
+$('.feedback__button-wrapper button').click(function(e) {
+  // stop default submit
+  e.preventDefault();
+
+  // validate form
+  let formValid = true;
+
+  let userMood;
+  const activeSmile = $('.smiley--active');
+  if(activeSmile.length == 0) {
+    formValid = false;
+    $('.feedback__opinion-text').addClass('feedback__error');
+  } else {
+    userMood = getMood($(activeSmile).attr('class').split(' ')[3]);
+  }
+
+  let feedbackType;
+  const activeType = $('.feedback__category-item--active');
+  if(activeType.length == 0) {
+    formValid = false;
+    $('.feedback__category-text').addClass('feedback__error');
+  } else {
+    feedbackType = $(activeType).html();
+  }
+
+  const feedbackText = $('.feedback__text').val();
+  if(feedbackText == '') {
+    formValid = false;
+    $('.feedback__text-par').addClass('feedback__error');
+  }
+
+  if(formValid) {
+    alert(`
+        Sorry! There is no server to send request to right now.
+        But I got information you provided. Take a look:
+        Your opinion of my website - "${userMood}"
+        Feedback category choice - "${feedbackType}"
+        Feedback text - "${feedbackText}"
+      `);
+  }
+});
+
+function getMood(moodClass) {
+  switch(moodClass) {
+    case 'angry':
+      return 'Angry';
+    case 'frown':
+      return 'Disappointed';
+    case 'neutral':
+      return 'Nothing special';
+    case 'ok':
+      return 'Good';
+    case 'happy':
+      return 'Happy';
+    default:
+      return 'You had no opinion...';
+  }
+}
 
 // randomizer for halloween facts on the main page
 // facts array looks messy but I don't see other options to store long strings
