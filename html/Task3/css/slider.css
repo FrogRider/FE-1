@@ -1,23 +1,22 @@
 .slider {
+  max-height:600px;
+  overflow: hidden;
   position: relative;
   width: 100%;
 }
 
 .slider__item {
-  align-items: flex-end;
-  display: flex;
-  height:600px;
   left: 0;
-  overflow: hidden;
-  position: absolute;
   top: 0;
   width: 100%;
 }
 
 .slider__item--new {
   left: -1920px;
+  position: absolute;
 }
 
 .slider__item img {
+  max-height: 100%;
   width:100%;
 }

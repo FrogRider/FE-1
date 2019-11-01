@@ -4,9 +4,10 @@
 
 $(document).ready(function() {
   let slideIndex = 2;
-  setTimeout(initSlider, 6000);
+  setTimeout(initSlider, 4000);
 
   function removeSlide() {
+    $('.slider__item').css('position', 'relative');
     $('.slider__item')[0].remove();
   }
 

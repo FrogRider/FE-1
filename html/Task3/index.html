@@ -7,19 +7,37 @@
   <title>Happy Halloween!</title>
   <link rel="stylesheet" href="css/main.css">
   <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script src="script/slider.js"></script>
+  <script src="https://kit.fontawesome.com/b50944a61a.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="header">
+    <div class="header__mobile-menu">
+      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      	 width="40px" height="40px" viewBox="0 0 124 124" style="enable-background:new 0 0 124 124;" xml:space="preserve">
+        <g>
+        	<path d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z"/>
+        	<path d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z"/>
+        	<path d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z"/>
+        </g>
+      </svg>
+    </div>
+    <div class="header__mobile-dropdown">
+      <ul>
+        <li><a href="#history">History</a></li>
+        <li><a href="#facts">Fun Facts</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#feedback">Leave Your Feedback</a></li>
+      </ul>
+    </div>
     <div class="header__name">
       Halloween
     </div>
     <nav class="header__menu">
       <ul>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Fun Facts</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Leave Your Feedback</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#facts">Fun Facts</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#feedback">Leave Your Feedback</a></li>
       </ul>
     </nav>
   </header>
@@ -27,9 +45,55 @@
     <section class="slider">
       <div class="slider__item"><img src="img/pumpkin-1.jpg" alt=""></div>
     </section>
+    <section class="block">
+      <article class="block__article" id="history">
+        <h1>History</h1>
+        <p>
+          Halloween, contraction of All Hallows’ Eve, a holiday observed
+          on October 31, the evening before All Saints’ (or All Hallows’)
+          Day. The celebration marks the day before the Western Christian
+          feast of All Saints and initiates the season of Allhallowtide,
+          which lasts three days and concludes with All Souls’ Day. In much
+          of Europe and most of North America, observance of Halloween is
+          largely nonreligious.
+        </p>
+        <p>
+          Halloween had its origins in the festival of Samhain among the Celts
+          of ancient Britain and Ireland. On the day corresponding to November
+          1 on contemporary calendars, the new year was believed to begin.
+          That date was considered the beginning of the winter period, the
+          date on which the herds were returned from pasture and land tenures
+          were renewed. During the Samhain festival the souls of those who had
+          died were believed to return to visit their homes, and those who had
+          died during the year were believed to journey to the otherworld.
+          People set bonfires on hilltops for relighting their hearth fires
+          for the winter and to frighten away evil spirits, and they sometimes
+          wore masks and other disguises to avoid being recognized by the
+          ghosts thought to be present. It was in those ways that beings
+          such as witches, hobgoblins, fairies, and demons came to be
+          associated with the day. The period was also thought to be
+          favourable for divination on matters such as marriage, health,
+          and death. When the Romans conquered the Celts in the 1st century
+          CE, they added their own festivals of Feralia, commemorating the
+          passing of the dead, and of Pomona, the goddess of the harvest.
+        </p>
+      </article>
+      <aside class="block__side" id="facts">
+        <h1>Did You Know That...</h1>
+        <p>
+          <ul class="block__side-facts">
+            <!-- Here go generated list items for randomized facts -->
+          </ul>
+        </p>
+      </aside>
+    </section>
   </main>
   <footer>
   <!-- TODO: populate footer with info -->
   </footer>
+
+<script src="script/slider.js"></script>
+<script src="script/main.js"></script>
+
 </body>
 </html>

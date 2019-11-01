@@ -14,6 +14,7 @@ orange - #ff6200
 
 html {
   font-family: 'Raleway', 'Open Sans', sans-serif;
+  font-size: 16px;
   min-height: 100%;
   position: relative;
   scroll-behavior: smooth;
@@ -27,7 +28,7 @@ header,
 footer {
   background-color: #000;
   box-sizing: border-box;
-  min-height:60px;
+  height:60px;
   width: 100%;
 }
 
@@ -40,6 +41,47 @@ footer {
   bottom: 0;
   left: 0;
   position: absolute;
+}
+
+main {
+  padding-bottom: 60px;
+}
+
+.block {
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+  line-height: 1.5;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.block__side {
+  width: 30%;
+}
+
+.block__side-facts {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.block__side-facts i {
+  color: #ff6200;
+}
+
+.block__side-facts li {
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.fact-text::before {
+  content: "..."
+}
+
+.block__article {
+  padding-right: 40px;
+  width: 70%;
 }
 
 .header__name {
@@ -73,15 +115,79 @@ footer {
   padding: 0 20px;
 }
 
-.header__menu li:hover {
+.header__menu li:hover,
+.header__mobile-dropdown li:hover {
   background-color: #ff6200;
 }
 
-.header__menu li a {
+.header__menu li a,
+.header__mobile-dropdown li a {
   color: #ff6200;
   text-decoration: none;
 }
 
-.header__menu li:hover a {
+.header__menu li:hover a,
+.header__mobile-dropdown li:hover a {
   color: #000;
+}
+
+.header__mobile-menu {
+  cursor: pointer;
+  display: none;
+  margin-right: 20px;
+}
+
+.header__mobile-menu svg {
+  fill: #ff6200;
+}
+
+.header__mobile-dropdown {
+  background-color: black;
+  display: none;
+  left: 0;
+  min-width: 250px;
+  position: absolute;
+  top: 60px;
+  z-index: 9999;
+}
+
+.header__mobile-dropdown ul {
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__mobile-dropdown li {
+  color: #ff6200;
+  cursor: pointer;
+  font-size: 22px;
+  height: 100%;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+@media only screen and (max-width: 880px) {
+  .block {
+    flex-direction: column;
+  }
+
+  .block__side {
+    width: 100%
+  }
+
+  .block__article {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__mobile-menu {
+    align-items: center;
+    display: flex;
+  }
 }
