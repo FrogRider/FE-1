@@ -47,15 +47,6 @@ $('.feedback__button-wrapper button').click(function(e) {
     userMood = getMood($(activeSmile).attr('class').split(' ')[3]);
   }
 
-  let feedbackType;
-  const activeType = $('.feedback__category-item--active');
-  if(activeType.length == 0) {
-    formValid = false;
-    $('.feedback__category-text').addClass('feedback__error');
-  } else {
-    feedbackType = $(activeType).html();
-  }
-
   const feedbackText = $('.feedback__text').val();
   if(feedbackText == '') {
     formValid = false;
@@ -75,16 +66,12 @@ $('.feedback__button-wrapper button').click(function(e) {
 
 function getMood(moodClass) {
   switch(moodClass) {
-    case 'angry':
-      return 'Angry';
     case 'frown':
       return 'Disappointed';
     case 'neutral':
       return 'Nothing special';
     case 'ok':
       return 'Good';
-    case 'happy':
-      return 'Happy';
     default:
       return 'You had no opinion...';
   }

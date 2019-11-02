@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "slider.css";
+@import "feedback.css";
 
 @font-face {
   font-family: 'csnpwdt';
@@ -12,10 +13,6 @@
   src: url(../font/Raleway-Regular.ttf);
 }
 
-/*
-orange - #ff6200
-*/
-
 html {
   font-family: 'Raleway', 'Open Sans', sans-serif;
   font-size: 16px;
@@ -24,16 +21,14 @@ html {
   scroll-behavior: smooth;
 }
 
-audio {
+audio,
+button:focus,
+summary {
   outline: 0;
 }
 
 body {
   background-color: #292929;
-}
-
-button:focus {
-  outline:0;
 }
 
 h1 {
@@ -181,102 +176,6 @@ video {
   content: "..."
 }
 
-.feedback {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.feedback p {
-  margin-top: 0;
-}
-
-.feedback__category,
-.feedback__category div:nth-child(2) {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.feedback__category {
-  margin-bottom: 20px;
-}
-
-.feedback__category-item {
-  align-items: center;
-  border: 2px solid white;
-  border-radius: 10px;
-  box-sizing: border-box;
-  color:white;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  height: 72px;
-  padding: 20px;
-  text-align: center;
-  width: 25%;
-}
-
-.feedback__category-item--active {
-  background-color: #ff6200;
-  border-color: black;
-  color: black;
-}
-
-.feedback__button-wrapper {
-  display: flex;
-  justify-content: flex-end;
-  margin: 20px 0;
-  width: 100%;
-}
-
-.feedback__button-wrapper button {
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 10px;
-  color: white;
-  cursor: pointer;
-  width: 25%;
-  padding: 10px 0;
-}
-
-.feedback__button-wrapper button:hover {
-  background-color: #ffcaa8;
-  border-color: black;
-  color: black;
-}
-
-.feedback__button-wrapper button:active {
-  background-color: #ff6200;
-}
-
-.feedback__error {
-  color: red;
-  text-decoration: underline;
-}
-
-.feedback__onhover:hover {
-  background-color: #ffcaa8;
-  border-color: black;
-  color: black;
-}
-
-.feedback__smiles {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1em;
-}
-
-.feedback__text {
-  box-sizing: border-box;
-  height: 200px;
-  padding: 10px;
-  resize: none;
-  width: 100%;
-}
-
 .header__name {
   align-items: center;
   color: #ff6200;
@@ -363,23 +262,6 @@ video {
   height: 65px;
   text-align: center;
   width: 100%;
-}
-
-.smiley {
-  color: white;
-  cursor: pointer;
-  font-size: 4em;
-  padding: 0 10px;
-}
-
-.smiley:hover {
-  color: #ffcaa8;
-}
-
-.smiley--active {
-  /* I will try and think of something instead of important */
-  color: #ff6200 !important;
-  /* I promise! */
 }
 
 @media only screen and (max-width: 880px) {

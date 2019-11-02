@@ -1,0 +1,79 @@
+.feedback {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback p {
+  margin-top: 0;
+}
+
+.feedback__button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.feedback__button-wrapper button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  width: 25%;
+  padding: 10px 0;
+}
+
+.feedback__button-wrapper button:hover {
+  background-color: #ffcaa8;
+  border-color: black;
+  color: black;
+}
+
+.feedback__button-wrapper button:active {
+  background-color: #ff6200;
+}
+
+.feedback__error {
+  color: red;
+  text-decoration: underline;
+}
+
+.feedback__onhover:hover {
+  background-color: #ffcaa8;
+  border-color: black;
+  color: black;
+}
+
+.feedback__smiles {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.feedback__text {
+  box-sizing: border-box;
+  height: 200px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+}
+
+.smiley {
+  color: white;
+  cursor: pointer;
+  font-size: 3em;
+  padding: 0 10px;
+}
+
+.smiley:hover {
+  color: #ffcaa8;
+}
+
+.smiley--active {
+  /* I will try and think of something instead of important */
+  color: #ff6200 !important;
+  /* I promise! */
+}
