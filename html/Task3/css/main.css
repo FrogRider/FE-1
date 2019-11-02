@@ -23,7 +23,8 @@ html {
 
 audio,
 button:focus,
-summary {
+summary,
+video {
   outline: 0;
 }
 
@@ -96,10 +97,6 @@ tr:nth-child(odd) {
 
 tr:nth-child(even) {
   background-color: #ffbd94;
-}
-
-video {
-  outline: 0;
 }
 
 .block {
@@ -217,8 +214,8 @@ video {
   align-items: center;
   color: #ff6200;
   display: flex;
-  justify-content: center;
   height: 100%;
+  justify-content: center;
   text-decoration: none;
   width: 100%;
 }
@@ -274,8 +271,8 @@ video {
   }
 
   .block__main {
-    width: 100%;
     padding-right: 0;
+    width: 100%;
   }
 
   .block__videos,
