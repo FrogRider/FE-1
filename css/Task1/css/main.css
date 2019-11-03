@@ -1,0 +1,23 @@
+@import "noramlize.css";
+
+.block {
+  padding: 20px;
+  width:100%;
+}
+
+.radio-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-div input {
+  display: none;
+}
+
+.radio-div label::before {
+  content: "aaa"
+}
+
+.radio-div input:checked label::before{
+  content: "bbb"
+}
